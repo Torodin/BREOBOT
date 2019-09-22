@@ -1,0 +1,15 @@
+{
+  "name": "BREOBOT",
+  "version": "0.1.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "author": "Diego Gómez",
+  "dependencies": {
+    "discord.js": "file:node_modules/discord.js",
+    "dotenv": "^8.1.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.2",
+    "ytdl-core": "^0.29.7"
+  }
+}
