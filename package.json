@@ -1,12 +1,29 @@
 {
   "name": "BREOBOT",
   "version": "0.1.0",
-  "engines": {
-    "node": "10.13.0"
-  },
-  "description": "My own Discord bot",
+  "description": "Bot de discord",
   "main": "bot.js",
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torodin/BREOBOT.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
   "author": "Diego Gómez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torodin/BREOBOT/issues"
+  },
+  "homepage": "https://github.com/synicalsyntax/discord.js-heroku",
   "dependencies": {
     "discord.js": "file:node_modules/discord.js",
     "dotenv": "^8.1.0",
