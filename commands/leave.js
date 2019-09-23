@@ -7,15 +7,11 @@ module.exports = {
   cooldown: 10,
   execute(message, args) {
     const { voiceChannel } = message.member;
-    const voiceConnectionBot = message.client.voiceConnections
-      .filter(voiceConnection => voiceConnection.channel.guild == message.guild);
 
-    const voiceChannelBot = voiceConnectionBot.channel;
+    if (!voiceChannel || !voiceChannel.connection) {
+      return message.reply('Tienes que estar conectado al mismo canal que el bot!');
+    }
 
-    console.log(`channel: ${voiceConnectionBot.channel}\nconn: ${voiceConnectionBot}`);
-
-    if (!voiceChannelBot) return message.reply('El bot no está conectado a ningun canal!');
-
-    voiceChannelBot.leave();
+    voiceChannel.leave();
   },
 };
